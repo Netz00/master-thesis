@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+\begin{document}
+\begin{algorithm}
+\caption{Iterative Algorithm}\label{iterative_algorithm}
+\begin{algorithmic}[1]
+\Procedure{IterativeAlgorithm}{$K$, $e$, $n_{min}$}
+    \State $M \gets \text{LoadDataset()}$
+    \State $E \gets \text{RandomlySample}(M,e)$
+    \State $T \gets M - E$
+    \State $i_{\max} \gets n_{min} \times \max(K)$
+    \For{$i \gets 0$ \textbf{to} $i_{max}$}
+        \State $seed \gets \text{RandomInteger}(0, 1000)$
+        \State $B \gets \text{Balance}(T, seed)$
+        \For {$k \in K$}
+            \State $parts \gets 0$
+            \If{$i < \left\lfloor \frac{i_{\text{max}}}{k} \right\rfloor$}
+                \State $parts \gets k$
+            \ElsIf{$i = \left\lfloor \frac{i_{\text{max}}}{k} \right\rfloor$}
+                \State $parts \gets i_{\max} \bmod k$
+            \EndIf
+            \For {$p \gets 0$ \textbf{to} $parts$}
+                \State $partition \gets \text{GetPartition}(B, p, k)$
+                \State $accuracy \gets \text{TrainAndEvaluateModel}(partition, E)$
+                \State $\text{SaveResults}(i, k, p, \text{seed}, \text{accuracy})$
+            \EndFor
+        \EndFor
+    \EndFor
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+\end{document}
