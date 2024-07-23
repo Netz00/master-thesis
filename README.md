@@ -1,9 +1,15 @@
+![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-gray?style=for-the-badge&logo=Jupyter)
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+![TensorFLow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
 # Master thesis
 
 ## Classification performance analysis of medical histopathology images using deep neural networks
 
 >💡 This repository contains Jupyter Notebooks and Python scripts used during master thesis research.
-
+- [Thesis Presentation](./etc/250_23-24_Durdov-Božo_516-2022_Master_Thesis_presentation.pdf)
 
 ### Repository structure
 
