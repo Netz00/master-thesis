@@ -11,6 +11,7 @@
 >💡 This repository contains Jupyter Notebooks and Python scripts used during master thesis research.
 - [Thesis](https://dabar.srce.hr/islandora/search/bo%C5%BEo%20durdov?type=dismax)
 - [Thesis Presentation](./etc/250_23-24_Durdov-Božo_516-2022_Master_Thesis_presentation.pdf)
+- [Conference Paper](https://www.researchgate.net/publication/384354831_Training_Dataset_Pruning_Algorithm_with_Evaluation_on_Medical_Datasets)
 
 ### Repository structure
 
